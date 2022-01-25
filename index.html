@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Switch...Case - JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var bairro = prompt("Digite um bairo de entrega: (Centro, Fragata, Três Vendas");
+        var taxaEntrega;
+        switch (bairro) {
+            case "centro":
+                taxaEntrega = 5.00;
+                break;
+            case "Fragata":
+            case "Três Vendas":
+                taxaEntrega = 7.00;
+                break;
+            case "Laranjal":
+                taxaEntrega = 10.00;
+                break;
+            default:
+                taxaEntrega: 8.00;
+        }
+        alert("taxa R$ " + taxaEntrega.toFixed(2));
+    </script>
+</body>
+
+</html>
